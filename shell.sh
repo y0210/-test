@@ -25,3 +25,4 @@ elif  [ "$1" -gt "$2" ];then
     else
     echo "$1 < $2"
 fi
+echo "test"
