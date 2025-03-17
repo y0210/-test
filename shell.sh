@@ -16,16 +16,32 @@
 # echo "你根本并不知道我喜欢谁"
 # ;;
 # esac
-echo "比较数字大小"
-if [ "$1" -eq "$2" ]
-then
-    echo "$1 = $2"
-elif  [ "$1" -gt "$2" ];then   
-    echo "$1 > $2"
-    else
-    echo "$1 < $2"
-fi
-<<<<<<< HEAD
-=======
-echo "test"
->>>>>>> test
+#echo "比较数字大小"
+#if [ "$1" -eq "$2" ]
+#then
+#    echo "$1 = $2"
+#elif  [ "$1" -gt "$2" ];then   
+#    echo "$1 > $2"
+#    else
+#    echo "$1 < $2"
+#fi
+
+
+#echo "test"
+
+for (( i=1; i <= $1; i++ ))
+do
+	sum=$[ $sum + $i ]
+done
+echo $sum
+
+# if [ "$2" = "$3" ]
+# then
+#     echo "$2 = $3"
+# fi
+
+
+for i in  {1..100}
+do
+    sum=$(( $sum + $i ))
+done
